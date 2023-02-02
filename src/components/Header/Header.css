@@ -1,0 +1,40 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: medium;
+    padding: 0 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 145px;
+    height: 50px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .headerContainer {
+        padding: 50px 100px;
+    }
+
+    a {
+        font-size: 24px;
+        padding: 0 20px;
+    }
+
+    img {
+        width: 210px;
+        height: 70px;
+    }
+}

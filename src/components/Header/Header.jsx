@@ -5,8 +5,8 @@ import Logo from '../../assets/logo.png'
 function Header() {
   return (
     <div className="headerContainer">
-      <img src={Logo} alt="Logo Kasa" />
-      <div className="NavContainer">
+      <img src={Logo} id="logo" alt="Logo Kasa" />
+      <div className="navContainer">
         <Link id="home" to="/">
           Accueil
         </Link>

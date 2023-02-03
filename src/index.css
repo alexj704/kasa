@@ -1,6 +1,6 @@
 @import url('//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800');
 
-* {
+body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
@@ -8,4 +8,12 @@
 
 :root {
     --primary-color: #FF6060;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
 }

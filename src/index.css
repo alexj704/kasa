@@ -8,6 +8,7 @@ body {
 
 :root {
     --primary-color: #FF6060;
+    --background-color: #F6F6F6;
 }
 
 @media screen and (min-width: 768px) {

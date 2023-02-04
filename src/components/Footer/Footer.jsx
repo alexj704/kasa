@@ -6,8 +6,8 @@ function Footer() {
   const year = date.getFullYear()
   return (
     <footer className="footerContainer">
-      <img src={LightLogo} alt="logo Kasa light" />
-      <p>© {year} Kasa. All rights reserved</p>
+      <img src={LightLogo} alt="logo Kasa light" className="footerLogo" />
+      <p className="footerText">© {year} Kasa. All rights reserved</p>
     </footer>
   )
 }

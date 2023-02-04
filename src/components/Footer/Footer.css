@@ -8,21 +8,20 @@
     padding: 20px 0;
 }
 
-img {
+.footerLogo {
     width: 120px;
     height: 40px;
     align-self: center;
 }
 
-p {
+.footerText {
     font-size: 12px;
     padding: 20px 0;
 }
 
 @media screen and (min-width: 768px) {
 
-    p {
+    .footerText {
         font-size: 24px;
     }
-
 }

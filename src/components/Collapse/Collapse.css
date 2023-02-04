@@ -1,0 +1,52 @@
+.collapseContainer {
+    display:flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 30px auto;
+
+}
+
+.collapseTitleContainer {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    color: white;
+}
+
+.collapseTitle {
+    margin: 0;
+    text-align: center;
+    padding: 5px 15px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.collapseIcon {
+    font-size: 20px;
+    align-self: center;
+    padding-right: 10px;
+}
+
+.collapseDescriptionContainer {
+    background-color: var(--background-color);
+    border-radius: 0 0 10px 10px;
+}
+
+.collapseDescription {
+    padding: 0 10px;
+    color: var(--primary-color);
+    font-size: 12px;
+}
+
+@media screen and (min-width:768px) {
+    .collapseTitle {
+        font-size: 24px;
+    }
+
+    .collapseDescription {
+        font-size: 24px;
+    }
+
+}

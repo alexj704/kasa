@@ -4,17 +4,17 @@ import Logo from '../../assets/logo.png'
 
 function Header() {
   return (
-    <div className="headerContainer">
+    <header className="headerContainer">
       <img src={Logo} id="logo" alt="Logo Kasa" />
       <div className="navContainer">
         <Link id="home" to="/">
           Accueil
         </Link>
-        <Link id="about" to="/">
+        <Link id="about" to="/about">
           A propos
         </Link>
       </div>
-    </div>
+    </header>
   )
 }
 

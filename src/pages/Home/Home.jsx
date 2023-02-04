@@ -21,7 +21,7 @@ function Home() {
   }, [])
 
   return (
-    <div className="homeContainer">
+    <main className="homeContainer">
       <div className="titleContainer">
         <h1 className="homeTitle">Chez vous, partout et ailleurs</h1>
       </div>
@@ -40,7 +40,7 @@ function Home() {
           )}
         </ul>
       </div>
-    </div>
+    </main>
   )
 }
 

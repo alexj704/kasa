@@ -5,10 +5,10 @@ function Footer() {
   const date = new Date()
   const year = date.getFullYear()
   return (
-    <div className="footerContainer">
+    <footer className="footerContainer">
       <img src={LightLogo} alt="logo Kasa light" />
       <p>© {year} Kasa. All rights reserved</p>
-    </div>
+    </footer>
   )
 }
 

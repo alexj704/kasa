@@ -1,0 +1,39 @@
+.errorContainer {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.errorLogo {
+    width: 200px;
+    height: 100px;
+}
+
+.notFoundText {
+    font-size: 18px;
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 15px;
+}
+
+.homeLink{
+    font-size: 18px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+    .errorLogo {
+        width: 600px;
+        height: 260px;
+    }
+
+    .notFoundText {
+        font-size: 36px;
+        margin: 40px 0;
+    }
+
+    .homeLink {
+        font-size: 20px;
+    }
+}

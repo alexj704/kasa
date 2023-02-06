@@ -1,5 +1,5 @@
 import aboutIllustration from '../../assets/about-illustration.png'
-import './About.css'
+import styles from './About.module.css'
 import Collapse from '../../components/Collapse/Collapse'
 
 const aboutData = [
@@ -24,9 +24,9 @@ const aboutData = [
 function About() {
 
     return (
-        <main className="aboutContainer">
-            <div className="imageContainer">
-            <img src={aboutIllustration} alt="Banière de page" className="aboutImage"/>
+        <main className={styles.aboutContainer}>
+            <div className={styles.imageContainer}>
+            <img src={aboutIllustration} alt="Banière de page" className={styles.aboutImage}/>
             </div>
             {aboutData.map((data, index) =>(
               <Collapse

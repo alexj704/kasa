@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './Home.css'
+import styles from './Home.module.css'
 import Card from '../../components/Card/Card'
 
 function Home() {
@@ -21,20 +21,21 @@ function Home() {
   }, [])
 
   return (
-    <main className="homeContainer">
-      <div className="titleContainer">
-        <h1 className="homeTitle">Chez vous, partout et ailleurs</h1>
+    <main className={styles.homeContainer}>
+      <div className={styles.titleContainer}>
+        <h1 className={styles.homeTitle}>Chez vous, partout et ailleurs</h1>
       </div>
-      <div className="accomodationsContainer">
-        <ul className="accomodationsList">
+      <div className={styles.accomodationsContainer}>
+        <ul className={styles.accomodationsList}>
           {error ? (
-            <span className="errorText">Oups il y a une erreur</span>
+            <span className={styles.errorText}>Oups il y a une erreur</span>
           ) : (
             data.map((profile) => (
               <Card
                 key={profile.id}
                 title={profile.title}
                 picture={profile.cover}
+                id={profile.id}
               />
             ))
           )}

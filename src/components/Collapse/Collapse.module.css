@@ -32,12 +32,20 @@
 .collapseDescriptionContainer {
     background-color: var(--background-color);
     border-radius: 0 0 10px 10px;
+
 }
 
 .collapseDescription {
     padding: 0 10px;
     color: var(--primary-color);
     font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.collapseList {
+    list-style: none;
+    color: var(--primary-color);
 }
 
 @media screen and (min-width:768px) {

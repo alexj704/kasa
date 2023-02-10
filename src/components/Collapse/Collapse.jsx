@@ -17,13 +17,20 @@ function Collapse({title, description}) {
                 <h2 className={styles.collapseTitle}>{title}</h2>
                 <span className={styles.collapseIcon} onClick={collapseFunc}>{isOpen ? <FontAwesomeIcon icon={faChevronUp} /> : <FontAwesomeIcon icon={faChevronDown} />}</span>
             </div>
-            { isOpen ?
-            <div className={styles.collapseDescriptionContainer}>
-                <p  className={styles.collapseDescription}>{description}</p>
-            </div> : ''}
+            { isOpen ? <div className={styles.collapseDescriptionContainer}>
 
+            { Array.isArray(description) ?
+                    <ul className={styles.collapseList}>
+                        {description.map((description, index) => (
+                            <li key={index} className={styles.collapseListItem}>
+                                {description}
+                            </li>))}
+                    </ul>  : <div>
+                    <p className={styles.collapseDescription}>{description}</p> </div>
+            }         </div>
+        : '' }
         </div>
-    )
+ )
 }
 
 export default Collapse

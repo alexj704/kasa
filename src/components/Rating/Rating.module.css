@@ -1,0 +1,9 @@
+.starIcon {
+  width: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .starIcon {
+    width: 34px;
+  }
+}

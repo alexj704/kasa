@@ -34,6 +34,7 @@ function Accomodation() {
           Navigate('/notfound')
         } else {
           setData(accomodation)
+          document.title = `${accomodation.title} - Kasa`
         }
       })
       .catch((error) => {

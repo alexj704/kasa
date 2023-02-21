@@ -34,9 +34,9 @@ function Collapse({ title, description }) {
             </ul>
           ) : (
             <div>
-              <p className={styles.collapseDescription}>{description}</p>{' '}
+              <p className={styles.collapseDescription}>{description}</p>
             </div>
-          )}{' '}
+          )}
         </div>
       ) : (
         ''

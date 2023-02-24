@@ -32,7 +32,7 @@ Frontend du projet 7 de la formation Developpeur Web d'OpenClassrooms
 
 ### Executing program
 
-- Pour lancer le projet lancer la commande npm start depuis la racine du backend.
+- Pour lancer le projet lancer la commande npm start depuis la racine du projet.
 
 ## Authors
 
